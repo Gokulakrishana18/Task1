@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+     [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+     /* For mobile phones: */
+     [class*="col-"] {
+      width: 100%;
+    }
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 40.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    @media only screen and (max-width: 800px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+
+      }
+      .container{
+        position:fixed;
+
+       top: 30%;
+       
+      }
+    }
+  /*head*/
+.header{
+ background-color: rgb(235, 235, 228);
+ position:fixed;
+ height: fit-content;
+ top:0;
+ z-index: 1;
+}
+a{
+      color: black;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+      
+     text-transform:uppercase;
+     
+    }
+    li:hover{
+    text-decoration:underline;
+    
+    }
+  .linkedinIogo{
+      width: 40px ;
+      height: 40px ;
+    }
+ .inputbox{
+      width:50%;
+      height:40px;
+      padding-top: 35px;
+      color: #5f9ea0;
+      text-justify: auto;
+    }
+    .inputbox:hover{
+      width: 70%;
+    }
+    .fa-search{
+      width: 20px;
+      height: 10px;
+      font-size: 35px;
+      position: relative;
+      bottom: 10px;
+      padding-top:15px ;
+      border: none;
+    
+    }
+    ul{
+       display: flex;
+       height: 30px;
+       text-align: center;
+       position: relative;
+       bottom: 15px;
+}
+a{
+      text-align: center;
+    }
+    .icon{
+      font-size: 30px;
+      list-style: none;
+    }
+    .first-list{
+      list-style: none;
+      justify-content: space-between;
+      cursor: pointer;
+      }
+
+.container{
+        position:sticky;
+       
+      margin-top: 10%;
+      }
+.aside1 {
+  background:linear-gradient(to right,#5f9ea0 0%,rgb(221, 210, 210) 80%,#5F9EA0 100%);
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+.aside{
+background-color: #d6ddd4;
+padding: 15px;
+color:black;
+text-align: left;
+font-size: 14px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+border-style:groove;
+cursor: pointer;
+}
+.a1{
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.705),rgb(100, 111, 117),white);
+      position: relative;
+      top: 50%;
+      padding: 0;
+      bottom: 30%;
+      width: 120px auto;
+      height: 50px ;
+     align-items:right;
+    
+}
+.img1{
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top:50% ;
+    padding-left:35%;
+    z-index: 1;
+  }
+  .lastlist-container li{
+position: relative;
+font-size:20px;
+}.middle{
+  align-items: center;
+}
+
+.first{
+position:sticky;
+height:fit-content;
+top: auto;
+
+}
+.maincontent input{
+  height: 40px;
+  width: 80%;
+  align-items: center;
+  border-radius: 50px;
+  position: relative;
+  text-align: center;
+ 
+
+}
+.search > img{
+  border-radius: 90%;
+  top: 20px;
+  justify-content: space-between;
+  display: inline;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.main-imag{
+  width: 40px;
+  height: 40px;
+}
+.mainlist{
+display: flex;
+justify-content:space-around;
+}
+.mainlist p{
+  margin-left: 10px;
+}
+ul{
+  justify-content: space-around;
+  top: 1px;
+  cursor: pointer;
+}
+.search  {
+  display: inline;
+}
+.maincontent{
+  border-style:groove;
+  height: 150%;
+  width: 100%;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #fdfffdde;
+}
+.likeshar{
+  padding: -10px;
+}
+.linkshar ul li{
+  list-style: none;
+}
+.likesharbutton{
+  list-style: none;
+}
+.giveyoursuggestion{
+  display: none;
+}
+.giveyoursuggestion:hover{
+  visibility: visible;
+}
+
+.middle-img{
+  width: 100%;
+  height: 100%;
+ position: relative;
+}
+.bodycontent{
+  width: 100%;
+  height: 100%;
+  border-style: groove;
+  border-radius: 10px;
+}
+.prf>img{
+  border-radius: 60%;
+  width: 90px;
+  padding: 10px;
+}
+.prf{
+  display:flex;
+}
+.username small{
+  font-size: 10px;
+}
+
+ </style>
+</head>
+<body>
+  <!--Menu bar  -->
+  <div class="header">
+  <div class="header col-12">
+<div class="searcContainer">
+<div class="col-5">
+        
+          <img src="data:image/png;base64,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" alt="" class="linkedinIogo">
+          <input class="inputbox" type="text"how placeholder="Search.." name="search">
+    </div>
+  </div>
+  <div class="col-7">
+        <nav>
+        <ul class="first-list">
+       
+        <li class="first-list">
+          <div class="icon">
+         <i class="fa fa-home"></i><br>
+        </div>
+        <a href="">Home</a>
+        </li>
+        <li class="first-list">
+          <div class="icon">
+         <i class="fa fa-group"></i><br>
+        </div>
+        <a href="">My Network</a>
+        </li>
+        <li class="first-list">
+          <div class="icon">
+         <i class="fa fa-suitcase"></i><br>
+        </div>
+        <a href="">Jobs</a>
+        </li>
+        <li class="first-list">
+          <div class="icon">
+         <i class="fa fa-paper-plane"></i><br>
+        </div>
+        <a href="">Messaging</a>
+        </li>
+        <li class="first-list">
+          <div class="icon">
+         <i class="fa fa-bell"></i><br>
+        </div>
+        <a href="">Notification</a>
+        </li>
+    </ul>
+  </nav>
+  </div>
+    </div>
+   </div>
+  <div class="container">
+  <div class="row">
+    <div class="firstContainer">
+    <div class="first col-3 col-s-3 ">
+     <div class="aside aside1">
+          <div class="img1">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGqkckS2wmMCQ/profile-displayphoto-shrink_100_100/0/1627830299197?e=1633564800&v=beta&t=pFKX4rYxcAOtvhDrZoUik6sPAuHYq7O-DtNoluA4Vh8" alt=""  class="img1">
+    </div>
+    </div>
+        <div class="aside aside2">
+            <div class="content">
+           <h4>GokulaKrishnan R</h4>
+                <p>Student at Karpagam College of Engineering||Front end developer||Dearm Big Liver Bigger</p>
+            </div>
+        </div>
+        <div class="aside aside3">
+            <p>Connection <b class="con">2</b></p>
+            <p>Grow your network</p>
+        </div>
+        <div class="aside aside4">
+          <p>Acesss exclusive tools & insights</p>
+        <a href="#"><b>Try Premiun for free</b></a>
+      </div>
+      <div class="aside aside5">
+        <b><i style="font-size:24px" class="fa">&#xf097;  </i>   My iteam</b>
+     </div>
+     <div class="aside aside6">
+      <h3><a href="#"> Group</a></h3>
+      <h3><a href="#"> Events</a></h3>
+      <h3><a href="#"> Follwed Hastags</a></h3>
+    
+    </div>
+      </div> 
+  </div> 
+  
+  <div class="  middle col-6 col-s-6 ">
+  <div class="maincontent header">
+    <div class="search">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGqkckS2wmMCQ/profile-displayphoto-shrink_100_100/0/1627830299197?e=1633564800&v=beta&t=pFKX4rYxcAOtvhDrZoUik6sPAuHYq7O-DtNoluA4Vh8" alt=""  >
+ <input type="text" placeholder="Start a post">
+ </div>
+ <div>
+      <ul>
+      <li class="mainlist">
+      <img src="https://image.flaticon.com/icons/png/128/2659/2659360.png" alt="" class="main-imag">
+      <p>Photo</p>
+     </li>
+      <li class="mainlist">
+        <img src="https://image.flaticon.com/icons/png/128/1160/1160680.png" alt="" class="main-imag">
+      <p>Video</p>
+      </li>
+      <li class="mainlist">
+        <img src="https://img-premium.flaticon.com/png/128/3277/premium/3277431.png?token=exp=1628694728~hmac=15de765d8718cdd185854f64d0262331" alt="" class="main-imag">
+      <p>Event</p>
+      </li>
+      <li class="mainlist">
+        <img src="https://image.flaticon.com/icons/png/128/4581/4581788.png" alt="" class="main-imag">
+      <p>Write article</p>
+      </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class=" bodycontent">
+<div class="profile">
+  <div class="prf">
+<img src="https://media-exp1.licdn.com/dms/image/C5603AQH79McwtJ0E0Q/profile-displayphoto-shrink_100_100/0/1627829395111?e=1634169600&v=beta&t=xys2rbTRGtkb7HaKXekea74n6tpqHxqQEbpWRm93sYk" alt="">
+<h3 class="username">Ranga<br><small>FullStack developer</small></h3>
+
+</div>
+<div class="middle-imag">
+  <div>
+  <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHu48oswD2YYw/feedshare-shrink_800/0/1628188025249?e=1631750400&v=beta&t=XlnA377zdyb5NXt14sjPg0Wyyyezmd2ITGfs6u9onLI" alt="" class="middle-img">
+</div>
+  <ul class="likeshar">
+    <li class="likesharbutton">
+      <i class="fa fa-thumbs-up"> Like
+         <ul class="giveyoursuggestion">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+  
+
+       </ul>
+ 
+      </i>
+     
+    </li>
+    <li class="likesharbutton">
+     <i class="fa fa-comments-o">comment</i> 
+    </li>
+    <li class="likesharbutton">
+      <i class="fa fa-share-alt">Share</i>
+    </li>
+    <li class="likesharbutton">
+      <i class="fa fa-send-o">Send</i>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class=" bodycontent">
+  <div class="profile">
+    <div class="prf">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQH79McwtJ0E0Q/profile-displayphoto-shrink_100_100/0/1627829395111?e=1634169600&v=beta&t=xys2rbTRGtkb7HaKXekea74n6tpqHxqQEbpWRm93sYk" alt="">
+  <h3 class="username">Ranga<br><small>FullStack developer</small></h3>
+  
+  </div>
+  <div class="middle-imag">
+    <div>
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHu48oswD2YYw/feedshare-shrink_800/0/1628188025249?e=1631750400&v=beta&t=XlnA377zdyb5NXt14sjPg0Wyyyezmd2ITGfs6u9onLI" alt="" class="middle-img">
+  </div>
+    <ul class="likeshar">
+      <li class="likesharbutton">
+        <i class="fa fa-thumbs-up"> Like
+           <ul class="giveyoursuggestion">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+    
+  
+         </ul>
+   
+        </i>
+       
+      </li>
+      <li class="likesharbutton">
+       <i class="fa fa-comments-o">comment</i> 
+      </li>
+      <li class="likesharbutton">
+        <i class="fa fa-share-alt">Share</i>
+      </li>
+      <li class="likesharbutton">
+        <i class="fa fa-send-o">Send</i>
+      </li>
+    </ul>
+  </div>
+  </div>
+  </div>
+  <div class=" bodycontent">
+    <div class="profile">
+      <div class="prf">
+    <img src="https://media-exp1.licdn.com/dms/image/C5603AQH79McwtJ0E0Q/profile-displayphoto-shrink_100_100/0/1627829395111?e=1634169600&v=beta&t=xys2rbTRGtkb7HaKXekea74n6tpqHxqQEbpWRm93sYk" alt="">
+    <h3 class="username">Ranga<br><small>FullStack developer</small></h3>
+    
+    </div>
+    <div class="middle-imag">
+      <div>
+      <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHu48oswD2YYw/feedshare-shrink_800/0/1628188025249?e=1631750400&v=beta&t=XlnA377zdyb5NXt14sjPg0Wyyyezmd2ITGfs6u9onLI" alt="" class="middle-img">
+    </div>
+      <ul class="likeshar">
+        <li class="likesharbutton">
+          <i class="fa fa-thumbs-up"> Like
+             <ul class="giveyoursuggestion">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+      
+    
+           </ul>
+     
+          </i>
+         
+        </li>
+        <li class="likesharbutton">
+         <i class="fa fa-comments-o">comment</i> 
+        </li>
+        <li class="likesharbutton">
+          <i class="fa fa-share-alt">Share</i>
+        </li>
+        <li class="likesharbutton">
+          <i class="fa fa-send-o">Send</i>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class=" last col-3 col-s-3">
+    <div class=" aside aside7">
+      <h2><b>Linkedin News</b></h2>
+      <div class="lastlist-container">
+       <p> <b> <li> StartUp roundup for the week</li></b><br>
+        <small>6d ago  2,214 member </small></p><br>
+        <p> <b> <li> StartUp roundup for the week</li></b><br>
+        <small>6d ago  2,214 member </small></p><br>
+        <p> <b> <li> StartUp roundup for the week</li></b><br>
+        <small>6d ago  2,214 member </small></p><br>
+        <p> <b> <li>StartUp roundup for the week</li></b><br>
+        <small>6d ago  2,214 member </small></p><br>
+    </div>
+      </div>
+      <div class=" aside aside8">
+        <h2><b>Today's top course</b></h2>
+        <div class="lastlist-container">
+         <h4> <b> 1.Customer service:Problem solving </b><br></h4>
+          <small>Noah Fleming </small></p><br>
+          <h4> <b> 2.Unconscion Bias </b><br></h4>
+          <small>Stacey Gordon</small></p><br>
+          <h4> <b> 3.Communication with Confidence </b><br></h4>
+          <small>jeff Ansell</small></p><br>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
